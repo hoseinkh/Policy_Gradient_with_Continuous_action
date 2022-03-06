@@ -1,4 +1,4 @@
-# Policy_Gradient_with_Continuous_action
+# Policy Gradient with Continuous Action Space
 
 We use Gaussian probability distribution function to model the policy function. We then use policy gradient to train the model. We also use baseline to decrease the variance of the model.
 
