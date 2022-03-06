@@ -322,7 +322,7 @@ if __name__ == '__main__':
   #
   plt.plot(totalrewards)
   plt.title("Rewards")
-  plt.savefig("./figs/reward_avg_MountainCarContinuous_tabular_state_action_values.png")
+  plt.savefig("./figs/reward_avg_MountainCarContinuous_policy_gradient_continuous_action.png")
   plt.show()
   plt.close()
   #
