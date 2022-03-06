@@ -25,7 +25,7 @@ We also use baseline to decrease the variance of the model. A good choice for th
 Now, assume that the neural network that we use for estimating the parameters of the probability distribution function of the policy (i.e. the *policy model*) has the parameter ***θ*** that we need to estimate, and the neural network that we use for estimating the value function V(s) has the parameters **w**. Now, the update rule for this algorithm is as follows: (See [1])
 
 <p float="left">
-  <img src="/figs/Fig-project/Formulation_policy_gradient_continuous_action.png" width="450" />
+  <img src="/figs/Formulation_policy_gradient_continuous_action.png" width="450" />
 </p>
 
 Now, since the Gaussian probability distribution function has two parameters, i.e. mean and std (recall that action is 1D), then we use two neural networks for the *policy model*, one estimating the mean and another estimates the std. The way we implement this is that we use the same set of hidden layers and just connect two different output layers: one (output) layer defines the neural netowrk for finding the mean, and the other (output) layer defines the other neural network used for finding the std.
@@ -43,7 +43,7 @@ The problem that we apply this method is the [**MountainCarContinuous-v0**](http
 We apply this method to the Cart Pole environment. The results is shown in the following figure:
 
 <p float="left">
-  <img src="/figs/Fig-project/Mountain_Car_Continuous_Action_Policy_Gradient.gif" width="450" />
+  <img src="/figs/Mountain_Car_Continuous_Action_Policy_Gradient.gif" width="450" />
 </p>
 
 
